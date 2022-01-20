@@ -1,7 +1,6 @@
 function solution(str){
-  let indexMax = str.length;
   let reverse = '';
-  for (let index = indexMax; index > 0; index--) {
+  for (let index = str.length; index > 0; index--) {
       reverse += str[index-1];
   }
   return reverse;
