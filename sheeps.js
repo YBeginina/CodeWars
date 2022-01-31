@@ -8,7 +8,7 @@ else {
         queue.pop();
         N++;
     }
-    return 'Oi! Sheep number ' + N + ' ! You are about to be eaten by a wolf!';
+    return 'Oi! Sheep number ' + N + '! You are about to be eaten by a wolf!';
 }
 }
 
