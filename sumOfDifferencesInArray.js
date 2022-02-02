@@ -24,9 +24,9 @@ console.log(sumOfDifferences1([2, 1, 10]));
 console.log(sumOfDifferences1([-3, -2, -1]));
 
 //лаконичнее с тернарным оператором
-function sumOfDifferences1(arr) {
+function sumOfDifferences2(arr) {
     return arr.length<1 ? 0 : Math.max(...arr) - Math.min(...arr);
     }
 
-    console.log(sumOfDifferences1([2, 1, 10]));
-    console.log(sumOfDifferences1([-3, -2, -1]));
+    console.log(sumOfDifferences2([2, 1, 10]));
+    console.log(sumOfDifferences2([-3, -2, -1]));
