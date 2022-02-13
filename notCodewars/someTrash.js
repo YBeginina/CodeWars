@@ -1,7 +1,13 @@
 'use strict';
 
-function concatArr(arr1, arr2, arr3) {
-    return arr1.concat(arr2, arr3);
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
 }
 
-console.log(concatArr([1,2,3], ["2",true,6],[7,8,9]));
+addSum(3);
+console.log(sum);
+
+addSum(7);
+console.log(sum);
