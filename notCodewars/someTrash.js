@@ -15,3 +15,6 @@ function sumOfNumInStr(a){
 }
 
 console.log(sumOfNumInStr('12345'));
+
+console.log([true,  true,  null,  false,
+    true,  true,  undefined,  true].filter(Boolean));
