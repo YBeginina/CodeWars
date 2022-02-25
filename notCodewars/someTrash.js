@@ -1,20 +1,30 @@
 'use strict';
 
-//console.log(typeof NaN);
 
+let count = 0;
 
-const data = [[1,2,3],[3,4,5],[5,6,7]];
-
-const flat = data.reduce((p, i) => p.concat(i), []);
-console.log(flat);
-
-
-function sumOfNumInStr(a){
-    let arr = a.split('');
-    return arr.map(i => +i).reduce((p, i) => p + i);
+function cc(card) {
+  // Only change code below this line
+switch (card) {
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+    count++;
+    break;
+  case 10:
+  case 'J':
+  case 'Q':
+  case 'K':
+  case 'A':
+    count--;
+    break;
 }
 
-console.log(sumOfNumInStr('12345'));
+  return count > 0 ? console.log(count + ' Bet') : console.log(count + ' Hold');
+  // Only change code above this line
+}
 
-console.log([true,  true,  null,  false,
-    true,  true,  undefined,  true].filter(Boolean));
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+//console.log(typeof NaN);
