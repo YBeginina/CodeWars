@@ -28,3 +28,11 @@ switch (card) {
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 //console.log(typeof NaN);
+
+function sum(a, b){
+  console.log(a+b);
+}
+
+sum(1,10);
+sum(15, 95);
+sum(54,52);
