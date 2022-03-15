@@ -1,7 +1,7 @@
 'use strict';
 
 
-let count = 0;
+/* let count = 0;
 
 function cc(card) {
   // Only change code below this line
@@ -26,13 +26,33 @@ switch (card) {
   // Only change code above this line
 }
 
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+cc(2); cc(3); cc(7); cc('K'); cc('A'); */
 //console.log(typeof NaN);
 
 function sum(a, b){
-  console.log(a+b);
+  return a + b;
 }
 
-sum(1,10);
-sum(15, 95);
-sum(54,52);
+function multiply(a, b){
+  return a * b;
+}
+
+function divide(a, b){
+  let c = a / b;
+  return c;
+}
+
+// 2*3 + 1*4
+function isPositive(a){
+  if (a > 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+
+
+console.log(isPositive(10));
+console.log(isPositive(-5));
